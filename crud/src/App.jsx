@@ -15,8 +15,8 @@ function App() {
       <ToastContainer theme='dark'/>
          < DrawerAppBar/>
          <Routes>
-        
-          <Route path="/" element={<Users />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<Users />} />
           <Route path="/Userdetails/:id" element={<Userdetails />} />
           <Route path="/CreateUser" element={ <CreateUser />} />
           <Route path="/CreateUser/:id" element={ <CreateUser />} />
@@ -26,4 +26,11 @@ function App() {
   );
 }
 
+function Home(){
+  return(
+    <div className='home'> 
+      <h1>Welcome to CRUD app...!!!</h1>
+    </div>
+  )
+}
 export default App;

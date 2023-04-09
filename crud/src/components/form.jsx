@@ -46,8 +46,8 @@ const CreateUser= () =>{
             body: JSON.stringify(formValues)
           })
 //             .then((data) => console.log(data))
-            .then(() => {toast.success("produt updated successfully")
-                        navigate("/")} );
+            .then(() => {toast.success("User updated successfully")
+                        navigate("/users")} );
          
         } else {
           fetch("https://636c8f127f47ef51e14ba6ab.mockapi.io/users/", {
@@ -58,8 +58,8 @@ const CreateUser= () =>{
             body: JSON.stringify(formValues)
           })
 //             .then((data) => console.log(data))
-            .then(() => {toast.success("produt added successfully")
-            navigate("/")
+            .then(() => {toast.success("User added successfully")
+            navigate("/users")
                 });
         }
       };

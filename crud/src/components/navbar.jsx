@@ -42,14 +42,15 @@ function DrawerAppBar(props) {
       </ListItem>
       <ListItem disablePadding >
             <ListItemButton sx={{ textAlign: 'center' }}   >
-              <ListItemText primary="Create User" onClick={() =>navigate('/CreateUser')}/>
+              <ListItemText primary="Users" onClick={() =>navigate('/users')}/>
             </ListItemButton>
       </ListItem>
       <ListItem disablePadding >
             <ListItemButton sx={{ textAlign: 'center' }}   >
-              <ListItemText primary=" About" onClick={() =>navigate('/About')}/>
+              <ListItemText primary="Create User" onClick={() =>navigate('/CreateUser')}/>
             </ListItemButton>
       </ListItem>
+
         
       </List>
     </Box>
@@ -84,13 +85,12 @@ function DrawerAppBar(props) {
               <Button sx={{ color: '#fff' }} onClick={() => navigate("/")}>
                Home
               </Button>
+              <Button sx={{ color: '#fff' }} onClick={() => navigate("/users")}>
+               users
+              </Button>
               <Button sx={{ color: '#fff' }} onClick={() => navigate("/CreateUser")}>
                Create User
               </Button>
-              <Button sx={{ color: '#fff' }} onClick={() => navigate("/About")}>
-               About
-              </Button>
-         
           </Box>
         </Toolbar>
       </AppBar>

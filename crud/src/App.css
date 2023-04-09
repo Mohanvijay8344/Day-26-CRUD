@@ -112,3 +112,14 @@
   max-width: 900px;
   text-align: left;
 }
+.home h1{
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+

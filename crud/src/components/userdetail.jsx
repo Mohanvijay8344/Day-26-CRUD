@@ -1,6 +1,8 @@
 import {Container} from 'reactstrap' ;
 import {useParams} from 'react-router-dom';
 import { useEffect, useState } from "react";
+import logo from './l.gif'
+import { useNavigate } from 'react-router-dom';
 
 const Userdetails = () =>{
     const [fetching,setFetching]=useState(false)
@@ -25,6 +27,8 @@ const Userdetails = () =>{
             
         }
       }, [id]);
+
+      const navigate = useNavigate();
 
 //       useEffect(()=>{console.log(formValues)},[formValues])
     return (
@@ -61,7 +65,9 @@ const Userdetails = () =>{
                      <div className='label'>About:</div>
                      <div className='labelDesc'>{formValues.description}</div>
                </div>
+               <button onClick={()=>navigate("/users")}>Back</button>
             </div>
+            
          </div>
            }
         </Container>
